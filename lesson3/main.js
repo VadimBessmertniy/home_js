@@ -150,3 +150,17 @@ next:
     }
     alert( a ); 
   }
+
+
+var a = prompt('Введите число 1');
+var b = prompt('Введите число 2');
+var c = prompt('Введите число 3');
+
+var message = (a > b && a > c && b > c) ? 'max = a, min = c':
+    (a > b && a < c && b < c) ? 'max = c, min = b':
+    (a < b && a > c && b > c) ? 'max = b, min = c':
+    (a < b && a < c && b > c) ? 'max = b, min = a':
+    (a < b && a < c && b < c) ? 'max = c, min = a':
+    (a > b && a > c && b < c) ? 'max = a, min = b':
+    'Что то пошло не так';
+alert (message);
