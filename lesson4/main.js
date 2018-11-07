@@ -34,18 +34,24 @@ switch (a) {
 
 */
 
-/*
-var age = +prompt('Введите свой возраст..');
+
+var age = prompt('Введите свой возраст..');
 function checkAge(age) {
-  return (age > 18) || confirm('Родители разрешили?');
-console.log (age);
+  return (age > 18) ? true : confirm('Родители разрешили?');
 }
-// не могу понять как работает return  почему не срабатывает..
-*/
+alert(checkAge(age));
+
 
 var a = prompt('Enter number A');
 var b = prompt('Enter number B');
-
 function min(a, b) {
   return a < b ? a : b;
+}
+alert (min(a, b));
+
+
+var x = prompt('Enter x');
+var n = prompt('Enter n');
+function pow(x,n) {
+    
 }
